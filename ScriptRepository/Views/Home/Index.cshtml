@@ -2,26 +2,38 @@
     ViewBag.Title = "Home Page";
 }
 
-<div class="row">
+<div class="row" style="margin-top: 15px;">
     <div class="col-md-12">
-        <table class="table table-responsive">
+        <div class="btn-group">
+            <a class="btn btn-primary" href="#">New</a>
+        </div>
+    </div>
+    <div class="col-md-12">
+        <table class="table table-responsive table-striped">
             <thead>
-            <tr>
-                <td>Script Guid</td>
-                <td>Issue Number</td>
-                <td>Author</td>
-                <td>Language</td>
-                <td>Content</td>
-            </tr>
+                <tr>
+                    <td>#</td>
+                    <td>Issue #</td>
+                    <td>Author</td>
+                    <td>Language</td>
+                    <td>Comment</td>
+                </tr>
             </thead>
             <tbody>
-            <tr>
-                <td>1a0f5021-e2c9-4f6c-8ba7-52ac82ca2b8</td>
-                <td>TEST-001</td>
-                <td>yimlu</td>
-                <td>PL-SQL</td>
-                <td>/*empty script*/</td>
-            </tr>
+                <tr>
+                    <td><a href="@Url.Action("Script","Repo")">1002</a></td>
+                    <td>TEST-002</td>
+                    <td>yimlu</td>
+                    <td>PL-SQL</td>
+                    <td>Add tables</td>
+                </tr>
+                <tr>
+                    <td>1001</td>
+                    <td>TEST-001</td>
+                    <td>yimlu</td>
+                    <td>PL-SQL</td>
+                    <td>Initial databases</td>
+                </tr>
             </tbody>
         </table>
     </div>
